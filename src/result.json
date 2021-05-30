@@ -1,0 +1,37 @@
+{
+    "queries": {
+        "GetUser": {
+            "name": "GetUser",
+            "parameters": {
+                "userId": {
+                    "type": "ID",
+                    "required": true
+                }
+            },
+            "functions": {
+                "variables": {
+                    "id": "userId"
+                },
+                "directives": {},
+                "user": {
+                    "fields": {
+                        "id":   { "directives": {}, "variables": {}, "fields": {} },
+                        "name": { "directives": {}, "variables": {}, "fields": {} },
+                        "isViewerFriend":   { "directives": {}, "variables": {}, "fields": {} },
+                        "profilePicture":   {
+                            "directives": {},
+                            "variables": {
+                                "size": 50
+                            },
+                            "fields": {
+                                "uri":      { "directives": {}, "variables": {}, "fields": {} },
+                                "width":    { "directives": {}, "variables": {}, "fields": {} },
+                                "height":   { "directives": {}, "variables": {}, "fields": {} }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
